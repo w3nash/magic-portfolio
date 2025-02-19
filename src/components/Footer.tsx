@@ -7,37 +7,37 @@ export const Footer = () => {
 
   return (
     <Flex
-      as="footer"
-      position="relative"
+      as='footer'
+      position='relative'
       fillWidth
-      padding="8"
-      horizontal="center"
-      mobileDirection="column"
+      padding='8'
+      horizontal='center'
+      mobileDirection='column'
     >
       <Flex
         className={styles.mobile}
-        maxWidth="m"
-        paddingY="8"
-        paddingX="16"
-        gap="16"
-        horizontal="space-between"
-        vertical="center"
+        maxWidth='m'
+        paddingY='8'
+        paddingX='16'
+        gap='16'
+        horizontal='space-between'
+        vertical='center'
       >
-        <Text variant="body-default-s" onBackground="neutral-strong">
-          <Text onBackground="neutral-weak">© {currentYear} /</Text>
-          <Text paddingX="4">{person.name}</Text>
-          <Text onBackground="neutral-weak">
+        <Text variant='body-default-s' onBackground='neutral-strong'>
+          <Text onBackground='neutral-weak'>© {currentYear} /</Text>
+          <Text paddingX='4'>{person.name}</Text>
+          <Text onBackground='neutral-weak'>
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-            / Build your portfolio with{" "}
+            / Simple UI by{" "}
             <SmartLink
               style={{ marginLeft: "-0.125rem" }}
-              href="https://once-ui.com/templates/magic-portfolio"
+              href='https://once-ui.com/'
             >
               Once UI
             </SmartLink>
           </Text>
         </Text>
-        <Flex gap="16">
+        <Flex gap='16'>
           {social.map(
             (item) =>
               item.link && (
@@ -46,14 +46,14 @@ export const Footer = () => {
                   href={item.link}
                   icon={item.icon}
                   tooltip={item.name}
-                  size="s"
-                  variant="ghost"
+                  size='s'
+                  variant='ghost'
                 />
-              ),
+              )
           )}
         </Flex>
       </Flex>
-      <Flex height="80" show="s"></Flex>
+      <Flex height='80' show='s'></Flex>
     </Flex>
   );
 };
